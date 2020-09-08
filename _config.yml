@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: PropHunt Dev Log
+title: PropHunt
 email: nick.dmalt@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Development log for the PropHunt game
@@ -27,7 +27,7 @@ url: "https://nicholas-maltbie.github.io/PropHuntDevLog" # the base hostname & p
 github_username:  nicholas-maltbie
 
 # Build settings
-theme: jekyll-theme-architect
+theme: jekyll-theme-slate
 plugins:
   - jekyll-feed
 

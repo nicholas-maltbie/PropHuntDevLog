@@ -5,5 +5,5 @@
 layout: home
 ---
 
-Shared interview prep notes and suggestions from Satya's Squad\[rilateral\]
+Development log for [PropHunt Game](https://github.com/nicholas-maltbie/PropHunt). See the [About]({{ "/" | relative_url }}/about) page for more information.
 
