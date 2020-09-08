@@ -32,7 +32,7 @@ layout: default
     {{ content }}
   </div>
 
-  /// Back to <a href={{ "/" | relative_url }}>Home Page</a>
+  /// Back to <a href={{ relative_url }}>Home Page</a>
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}

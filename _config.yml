@@ -53,3 +53,6 @@ exclude:
   - pull_request_template.md
   - LICENSE
   - Contributing.md
+
+disqus:
+  shortname: nickmaltbie

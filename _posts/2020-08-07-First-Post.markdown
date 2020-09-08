@@ -3,6 +3,7 @@ layout: post
 title:  "First Post"
 date:   2020-09-08 12:47:00 -0400
 categories: update
+comments: true
 ---
 
 This is the first post of the development log.

@@ -1,0 +1,31 @@
+<style>
+/** 
+ * Back to top button
+ */
+.topBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 40px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 10001; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #eee; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    border-style: solid;
+    border-color: white;
+}
+
+.topBtn:hover {
+    color: white;
+    background-color: #aaa; /* Add a dark-grey background on hover */
+}
+</style>
+
+<button onclick="topFunction()" id="myBtn" class="topBtn" title="Go to top">Top</button>
