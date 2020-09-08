@@ -1,0 +1,9 @@
+{
+  "short_name": "PropHunt",
+  "name": "PropHunt Development Log",
+  "author": "Nick Maltbie",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

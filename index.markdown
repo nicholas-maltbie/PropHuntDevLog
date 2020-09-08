@@ -5,5 +5,5 @@
 layout: home
 ---
 
-Development log for [PropHunt Game](https://github.com/nicholas-maltbie/PropHunt). See the [About]({{ "/" | relative_url }}/about) page for more information.
+Development log for [PropHunt Game](https://github.com/nicholas-maltbie/PropHunt). See the [About]({{ relative_url }}/about) page for more information.
 
