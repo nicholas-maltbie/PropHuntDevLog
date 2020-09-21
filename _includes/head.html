@@ -3,10 +3,10 @@
 
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <link rel="manifest" href="{{ relative_url }}/manifest.webmanifest"/>
+    <link rel="manifest" href="{{ site.baseurl }}/manifest.webmanifest"/>
     <meta name="theme-color" content="#333"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="canonical" href="https://nickmaltbie.com{{ relative_url }}"/>
+    <link rel="canonical" href="https://nickmaltbie.com/{{ site.baseurl }}/"/>
 
     <!-- icon in the highest resolution we need it for -->
     <!-- <link rel="icon" sizes="192x192" href="logo_192.png"/> -->
@@ -20,20 +20,20 @@
     if ('serviceWorker' in navigator) {
         // Use the window load event to keep the page load performant
         window.addEventListener('load', () => {
-        navigator.serviceWorker.register('{{ "/" | relative_url }}/service-worker.js');
+        navigator.serviceWorker.register('{{ site.baseurl }}/service-worker.js');
         });
     }
     </script>
 
     {%- seo -%}
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/assets/css/style.css">
     {%- feed_meta -%}
 
     {% seo %}
     {% include top-button.html %}
-    <script src="{{ '/' | relative_url }}/assets/scripts/top_button.js"></script>
+    <script src="{{ site.baseurl }}/assets/scripts/top_button.js"></script>
 
-    <script src="{{ '/' | relative_url }}/assets/lib/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/lib/jquery.min.js"></script>
     {% include cookie-consent.html %}
     {% include analytics.html %}
 </head>
