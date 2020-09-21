@@ -4,7 +4,7 @@ layout: default
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    /// Back to <a href={{ "/" | relative_url }}>Home Page</a>
+    /// Back to <a href="{{ site.baseurl }}/">Home Page</a>
 
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
@@ -32,7 +32,7 @@ layout: default
     {{ content }}
   </div>
 
-  /// Back to <a href={{ relative_url }}>Home Page</a>
+  /// Back to <a href="{{ site.baseurl }}/">Home Page</a>
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
