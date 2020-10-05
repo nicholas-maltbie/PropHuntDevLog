@@ -62,6 +62,8 @@ The only goals left for the initial version of the repository are:
 
 # Hackathon
 
+![Sample movement animation](https://drive.google.com/uc?export=view&id=18vgUN4-nVSaMfI3QwAm1ctLknWBuL6qx)
+
 As mentioned in the title, me and a few friends made a copy of the repository to start development of a duplicate project reusing a lot of the same code and features to create a clone of the game Among Us. The cloned repo we called Spaceship Murder Time and can be found here [https://github.com/nicholas-maltbie/SpaceshipMurderTime](https://github.com/nicholas-maltbie/SpaceshipMurderTime). 
 
 This added a lot of new features that will be moved to the PropHunt project as well. These features include
@@ -77,3 +79,4 @@ This will probably be developed as its own separate project and just have us cop
 
 I will work on a scene loading system for the PropHunt game as well and it will be a much cleaner and better formatted version that what exists in the PropHunt game so far. I'm happy with all the progress and look forward to what this will achieve in the future.
 
+Project Devpost Submission: [https://devpost.com/software/spaceship-murder-time](https://devpost.com/software/spaceship-murder-time)
