@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Week 9 : Unit Testing Galore"
+date:   2020-11-09 00:53:00 -0000
+categories: update
+comments: true
+---
+
+Post for week 6 was skipped due to being very busy with coursework. Better late than never.
+
+The main features being tackled between weeks 7 and 9 is documenting the project and debugging existing code.
+
+# Unit Testing
+
+So I have had difficulty creating good integration tests and I cannot run them on github actions in an automated manner.
+Is it important to have integration tests, yes, will I have them for now, out of scope but will keep this in mind for the future.
+
+Given these issues I have been working to reach 100% code coverage with unit tests via unity.
+I have been working with Oscar on this project quite a bit and am happy with the current progression of unit tests. As of 11-09-20 we are at about 40% test case coverage.
+I have had to switch some of the existing code to using the [Humble Object Pattern](https://blogs.unity3d.com/2014/06/03/unit-testing-part-2-unit-testing-monobehaviours/) for testing as unity MonoBehaviours do not like being tested easily and have a lot of quirky behaviors that are not easy to mock or edit directly.
+
+Given these challenges, I have learned quite a bit about how the C# jobs, compiler system and various components interact. Just today me and Oscar found out how to programmatically generate rigidbodies to allow for better testing of the Kinematic Character Controller systems. 
+Theoretically these tests will allow us to extend the behaviour of these systems without fear of unintendedly breaking their features.
+
+# Summary of updates
+
+Here are all of the PRs and quick summaries for them that were made between 10-19-20 and 11-09-20.
+* October 31st, 2020 - [PR #108](https://github.com/nicholas-maltbie/PropHunt/pull/108) - Adding rotating platforms for player movement
+* November 2nd, 2020 - [PR #109](https://github.com/nicholas-maltbie/PropHunt/pull/109) - Adding additional unit tests for client systems
+* November 3rd, 2020 - [PR #111](https://github.com/nicholas-maltbie/PropHunt/pull/111) - Fixing a bug related to refactoring the connection system and player reconnection to the game
+
+I'm looking forward to having the unit test coverage up to 100% by the end of next week and documenting the project as well as posting the current progress on unity forums and other online forums to get feedback from other developers who may be interested in learning about DOTS and this project. 
+
+The goal to have a game by the end of the calendar year is still possible (may be buggy and mostly incomplete but should be fun none the less).

@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "Week 7 : Basic KCC Complete"
+date:   2020-10-19 00:53:00 -0000
+categories: update
+comments: true
+---
+
+This post is quite a bit late being written on 11/09/20 but backwriting to fill out the log.
+
+By this point in the project the major features being added included finishing the basic Kinematic Character Controller and all of it's associated features. 
+
+Many of the issues that were hampering the project were resolved as well as stair snapping being added in [PR #103](https://github.com/nicholas-maltbie/PropHunt/pull/103)
+
+Here is a sample animation of the character walking up and down stairs before and after stair snapping
+
+Before Stair Snapping
+
+![Movement along stairs without vertical snapping](https://drive.google.com/uc?export=view&id=14BAJpGjplNbBH83xmu5O6ZGQ89iVRSS0)
+
+With Stair Snapping
+
+![Movement along stairs with vertical snapping enabled](https://drive.google.com/uc?export=view&id=1TGujp1MeFUXWps9sq2NtzdlOyFln2bw3)
+
+# Why is this post late?
+
+This post is late because I have been extra busy with coursework. I'm behind on most of the deadlines but this project can be drug out a bit longer, there aren't any hard deadlines and most of those were made to help me focus on the project, not to stress me out about getting it done before a release window.
+
+I would have to say I have also been extremely frustrated with the lack of stability in the DOTS packages but what cna you expect from these preview system (sighhhh).
+
+# Summary of updates
+
+Here are all of the PRs and quick summaries for them that were made between 10-05-20 and 10-19-20.
+* October 9th, 2020 - [PR #102](https://github.com/nicholas-maltbie/PropHunt/pull/103) Adding vertical character controller snapping
+* October 9th, 2020 - [PR #105](https://github.com/nicholas-maltbie/PropHunt/pull/105) Adding KCC Test objects to default scene
+* October 10th, 2020 - [PR #103](https://github.com/nicholas-maltbie/PropHunt/pull/104) Refactor of connection system
+
+I still want to document and make the project more clear to new users or people interested in learning about DOTS and this project.
