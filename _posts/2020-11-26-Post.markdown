@@ -1,0 +1,60 @@
+---
+layout: post
+title:  "Week 11 : Turkey Day Release"
+date:   2020-11-26 00:53:00 -0000
+categories: update
+comments: true
+---
+
+Did I skip a week without an update and wait until Thursday to write an update again... yes.
+But This update log is mostly for my own record so Just trying to keep it updated.
+
+As a fun update, the first alpha release and all the original milestones have been completed. See the first release [v0.1-alpha](https://github.com/nicholas-maltbie/PropHunt/releases/tag/v0.1-alpha) on the github tagged releases. 
+
+There are still quite a few bugs and things left to be done but it's time to start moving onto new issues and features for the project. Some of them (especially with the KCC) may not be resolved until more updates and changes are made to the project. 
+
+# First Alpha Release
+
+All of the major milestones were (mostly) completed!
+
+Since the last weekly blog (Week 9), There has been quite a changes. The major advancement was achieving 100% unit test case coverage. This along with fixing many bugs in the current systems, components, and various features that comes along with improving unit test coverage. Testing was mostly done the previous week but me and Oscar took some time to learn more about how github tracks workflow and changes to the project. We made a project board for tracking  adding and updating tests on github called [Finish Unit Testing](https://github.com/nicholas-maltbie/PropHunt/projects/2) (the link goes to the project tasks). We used github issues and Pull Requests to automate the process of moving around tasks, assigning them and managing them.
+
+There are a few things left unfinished in the initial release for each of the milestones though, here is a list of the milestones and what was left out:
+* [Kinematic Character Controller](https://github.com/nicholas-maltbie/PropHunt/milestone/1)
+  * Still a bit buggy (see issue ([#149](https://github.com/nicholas-maltbie/PropHunt/issues/149) or [#106](https://github.com/nicholas-maltbie/PropHunt/issues/106)).There are probably many undiscovered bugs in the kcc.
+  * The camera is a bit buggy when following the character ([issue #152](https://github.com/nicholas-maltbie/PropHunt/issues/152)).
+  * KCC Performance test (being handled as part of ([PR #151](https://github.com/nicholas-maltbie/PropHunt/pull/151) now)
+  * Rotating as a non spherical object may cause some issues (issue [#116](https://github.com/nicholas-maltbie/PropHunt/issues/116)). This will be an issue as many props will not have a sphere collider. There are many solutions to this so we will have to investigate all possibilities. 
+  * Some refactoring and reorganization left to be done ([issue #107]https://github.com/nicholas-maltbie/PropHunt/issues/107)).
+* [Basic Network Flow](https://github.com/nicholas-maltbie/PropHunt/milestone/2)
+  * This is mostly complete with a few issues like reloading sub scenes ([issue #88](https://github.com/nicholas-maltbie/PropHunt/issues/88)) not quite working yet due to the API not being fully developed.
+* [Main Menu UI](https://github.com/nicholas-maltbie/PropHunt/milestone/3)
+  * More UI Features such as user feedback ([issue #136](https://github.com/nicholas-maltbie/PropHunt/issues/136)) are important but the basic functionally is there. 
+* [Testing Framework](https://github.com/nicholas-maltbie/PropHunt/milestone/4)
+  * Testing framework has been developed. Playmode testing hasn't been added yet but integration testing may be part of a future update ([issue #153](https://github.com/nicholas-maltbie/PropHunt/issues/153))
+* [Automated Build Pipeline](https://github.com/nicholas-maltbie/PropHunt/milestone/5)
+  * Was working for previous version, but doesn't seem to be supported with unity ECS and sub scene loading as of yet ([issue #86](https://github.com/nicholas-maltbie/PropHunt/issues/86)).
+* [Network Synchronized Physics](https://github.com/nicholas-maltbie/PropHunt/milestone/6)
+  * Working as intended, just have to keep up to date with the updating versions of unity ecs and netcode
+* [Documentation and Style](https://github.com/nicholas-maltbie/PropHunt/milestone/7)
+  * Working as intended nad able to maintain style with `dotnet-format`
+
+# Next Steps
+
+The next steps are to work on setting up a new set of milestones for developing the project. Then breaking these milestones into individual issues and adding them to another project board. These new milestones include:
+* Basic Game Flow - Joining and Leaving a game, being associated with a team, and adding rounds to a match. Maybe a round timer for hiding props and seekers.
+* Player Animation - Create a basic humanoid avatar and get basic movement animation working. Maybe some Inverse Kinematics for feet, hands, and head movements
+* Intractable Objects - Add in an interactive type of object and allow the player to 'interact' with these objects. Things like doors, props, buttons, levers.
+* Player Transformation - Allow players to transform into props and switch between selected prop in an automated fashion
+* Player Combat/Death - This includes things like player state (dead or alive) and teleport players when a round ends/starts. Maybe basic system for hitting and damaging other characters and having them re-spawn. This should be integrated with the basic game flow. 
+
+When these features are completed, we will have the very basics of a prophunt game completed. New features to add in the future are
+* Multiple map selection and loading
+* Different kinds of weapons for hunters
+* Various objectives for props to complete as well
+* Scores for players during matches
+* Persistent user/character and friends
+* Allowing a user to host a game instead of a dedicated server
+* User created maps
+  * User created props in those maps
+* Many more features to come!
