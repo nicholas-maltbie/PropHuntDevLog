@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "Week 15 : Christmas Update"
+date:   2020-12-26 16:02:00 -0000
+categories: update
+comments: true
+---
+
+Ok, I's been another month since my last post here... I'm bad at reliably writing updates.
+
+The github repo has had many pull requests since the last post and the version of the project. I'm happy to say that these issues and updates have been tracked very well. The slate of features planned for the next version of the project are quite ambitious. Here is the list of the next milestones.
+
+## Milestones
+1. [Basic Game Flow](https://github.com/nicholas-maltbie/PropHunt/milestone/8) - Join game, leave game, rounds, points, winning/losing
+2. [Kinematic Character controller](https://github.com/nicholas-maltbie/PropHunt/milestone/1) - It's still a buggy mess so always more to fix
+3. [Prop transformation](https://github.com/nicholas-maltbie/PropHunt/milestone/11) - Wouldn't be PropHunt if you can't hide as a prop
+4. [Intractable objects](https://github.com/nicholas-maltbie/PropHunt/milestone/10) - Need to be able to interact with the rest of the world
+5. [Player Combat/Death](https://github.com/nicholas-maltbie/PropHunt/milestone/12) - Give the players weapons and let them fight each other
+6. [Player Animation](https://github.com/nicholas-maltbie/PropHunt/milestone/9) - Animate the player avatar to walk, run, jump, hold things, etc...
+7. [Automated Build Pipeline](https://github.com/nicholas-maltbie/PropHunt/milestone/5) - From last version, more to debug and fix with automated builds
+8. [Basic Network Flow](https://github.com/nicholas-maltbie/PropHunt/milestone/2) - More features are wanted with connecting and debugging
+
+## Changes Since Last update
+
+So the major additions to the project since November 26th (Gosh I should write updates more often). 
+
+* [PR #155](https://github.com/nicholas-maltbie/PropHunt/pull/155) Debugging connection code
+* [PR #162](https://github.com/nicholas-maltbie/PropHunt/pull/162) Adding client side prediction
+* [PR #166](https://github.com/nicholas-maltbie/PropHunt/pull/166) Removing movement tracking objects
+
+The main feature added was connection debugging and client side prediction. Client side prediction helps account for lag when communicating with the server. This allows the player to move locally without having to wait for a response form the server making the experience much more smooth. The good side of this is that it allows the player to more more easily. The bad part is that it broke moving with moving platforms. This was just removed as part of PR #166 but hopefully will be added at a later point.
+
+The next major features I"m working on will involve network communications, intractable objects, and transforming into props.
+
+## What's Next?
+
+I'm done with the honors experience part of the project but I hope to be able to keep adding new features and updating this log. Having a log helps keep progress going and keeps a track of how far the project has come.
+
+Sometimes this are stretches without updates or a bit with little updates (such as the past month) but hopefully things will continue to go well and new features will have been added to the project by the end of next week.
