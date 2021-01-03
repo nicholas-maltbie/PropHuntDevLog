@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Week 16 : Intractable Objects"
+date:   2021-01-02 14:05:00 -0000
+categories: update
+comments: true
+---
+
+Weekly update is back (hopefully for a bit now). The major features worked on this week 
+were the Update to 2020.2.1f1, and intractable objects.
+
+## Added Features
+
+Here is a breakdown of the features added by PR:
+* [PR #169](https://github.com/nicholas-maltbie/PropHunt/pull/169) Update to 2020.2.1f1, updated project to latest version of unity and fixed a lot of import, netcode, and ECS bugs that were in the project. This will be a constant trend of updating to follow the newest unity packages but it is the nature of the beast
+* [PR #171](https://github.com/nicholas-maltbie/PropHunt/pull/171) This detects what the player is looking at using a sphere cast in Unity DOT's physics system. This allows for interacting with objects, other players, environment from the player and will have more added functionality in future PRs.
+* [PR #172](https://github.com/nicholas-maltbie/PropHunt/pull/172) Fixing Shadows, Before shadows looked terrible, now they have crisp edges and we have settings for various URP definition and shader levels (low, medium, high). Still need a menu and settings options for switching between these but that should be handled within the next few weeks, for now it will always be on high.
+    ![Sample of shadows in scene before and after the shadows upgrade](https://drive.google.com/uc?export=view&id=197nUxsZf1OgTpVPC2zdHEzY1x9V_mmzi)
+* [PR #173](https://github.com/nicholas-maltbie/PropHunt/pull/173) Player team component, in order to have the prophunt game work properly, we will need each player to exist on a team. This simply saves that player team data and added that component to our main test character. This PR was also the pr written but a new contributor to the project, [timothy-buchanan](https://github.com/timothy-buchanan). He has helped to review some of the PRs this week and hopefully will be contributing to the project more over the next few updates.
+* [PR #174](https://github.com/nicholas-maltbie/PropHunt/pull/174) Highlight objects, this feature was added by me, [nicholas-maltbie](https://github.com/nicholas-maltbie) and [swiimii](https://github.com/swiimii). This consists of finding out what the player is looking at and then making it blink, or glow, a specific color to tell the player. This feature is critical to informing the player what is happening when they try to transform into props or interact with objects.
+  ![Image of cubes being highlighted when a player looks at them](https://drive.google.com/uc?export=view&id=1P1IxIAzIY1nWobH-Rw9Xg_MJOHmY-rP3)
+
+## Next Steps
+
+The current feature being worked on is the intractable items. Right now there is a door being worked on that will change states whenever a player 'interacts' with the door.
+This interaction system will also be used to transform players into props (not sure if this will be handled on the client, server, or somewhere between the two).
+Prop transformation and objects that react when a player interacts with them will both be in the game by the end of next week.
+
+After that, we will continue to work on the settings, UI, and configurations from a user.
+In addition to that, the game flow and rounds will be implemented soon.
+
+There will also need to be some debugging and changing to the KCC in order to have a smooth game experience.
