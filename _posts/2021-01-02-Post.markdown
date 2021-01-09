@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Week 16 : Intractable Objects"
+title:  "Week 16 : Interactable Objects"
 date:   2021-01-02 14:05:00 -0000
 categories: update
 comments: true
 ---
 
 Weekly update is back (hopefully for a bit now). The major features worked on this week 
-were the Update to 2020.2.1f1, and intractable objects.
+were the Update to 2020.2.1f1, and interactable objects.
 
 ## Added Features
 
@@ -22,7 +22,7 @@ Here is a breakdown of the features added by PR:
 
 ## Next Steps
 
-The current feature being worked on is the intractable items. Right now there is a door being worked on that will change states whenever a player 'interacts' with the door.
+The current feature being worked on is the interactable items. Right now there is a door being worked on that will change states whenever a player 'interacts' with the door.
 This interaction system will also be used to transform players into props (not sure if this will be handled on the client, server, or somewhere between the two).
 Prop transformation and objects that react when a player interacts with them will both be in the game by the end of next week.
 
