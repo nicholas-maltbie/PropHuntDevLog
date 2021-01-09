@@ -6,13 +6,13 @@ categories: update
 comments: true
 ---
 
-Weekly update are back (3 weeks running so far). The major feature added in this update has been finishing the intractable
+Weekly update are back (3 weeks running so far). The major feature added in this update has been finishing the interactable 
 objects and some plans for new features
 
 ## Added Features
 
 Here is a breakdown of the features added by PR:
-* [PR #175](https://github.com/nicholas-maltbie/PropHunt/pull/175) - Intractable objects and doors have been added
+* [PR #175](https://github.com/nicholas-maltbie/PropHunt/pull/175) - Interactable objects and doors have been added
 
 ![Preview of what a moving door looks like when a player interacts with the door](https://drive.google.com/uc?export=view&id=1OHTsLNCoiXH8Oz0q9jPvCLKOz3J5brjP)
 
@@ -31,7 +31,7 @@ Prop transformation is a bit more difficult than expected due to synchronizing t
 
 Originally we wanted to have this feature done this week but I think that opening up the development to new features and ideas will help out quite a bit.
 
-There is a high level design of how this feature should work as part of [Issue #158](https://github.com/nicholas-maltbie/PropHunt/issues/158). The issue is quite general in how the feature is designed but as of now it should be easy enough to add given that intractable objects and object highlighting have been added to the game. 
+There is a high level design of how this feature should work as part of [Issue #158](https://github.com/nicholas-maltbie/PropHunt/issues/158). The issue is quite general in how the feature is designed but as of now it should be easy enough to add given that interactable objects and object highlighting have been added to the game. 
 
 ### 2. First Level
 
