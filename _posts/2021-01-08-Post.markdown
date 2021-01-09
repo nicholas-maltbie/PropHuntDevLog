@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "Week 17 : Doors and Corners"
+date:   2021-01-02 14:05:00 -0000
+categories: update
+comments: true
+---
+
+Weekly update are back (3 weeks running so far). The major feature added in this update has been finishing the intractable
+objects and some plans for new features
+
+## Added Features
+
+Here is a breakdown of the features added by PR:
+* [PR #175](https://github.com/nicholas-maltbie/PropHunt/pull/175) - Intractable objects and doors have been added
+
+![Preview of what a moving door looks like when a player interacts with the door](https://drive.google.com/uc?export=view&id=1OHTsLNCoiXH8Oz0q9jPvCLKOz3J5brjP)
+
+This PR actually had quite a few bugs and expected behaviour that occur when you add quite a few doors at once so they will be addressed in the next PR adding the first level (layout). Here is a preview of different kinds of doors that can be added to the game.
+
+![Preview of how the sliding doors and normal moving doors work](https://drive.google.com/uc?export=view&id=1jPICytcaPp3ha-Xmw3YnmCoqlA2F9x3j)
+
+## Future Plans
+
+This week the features are a bit short, but a few new things are in the works.
+
+
+### 1. Prop Transformation
+
+Prop transformation is a bit more difficult than expected due to synchronizing the player information when a new player joins. It would be simple to send a command to all players whenever a player transforms into a prop but since the disguise will be rendered client-side (no mesh renderer on the server), we will need a synchronized field to handle player prop transformations. 
+
+Originally we wanted to have this feature done this week but I think that opening up the development to new features and ideas will help out quite a bit.
+
+There is a high level design of how this feature should work as part of [Issue #158](https://github.com/nicholas-maltbie/PropHunt/issues/158). The issue is quite general in how the feature is designed but as of now it should be easy enough to add given that intractable objects and object highlighting have been added to the game. 
+
+### 2. First Level
+
+The other developers on the project have recommended doing some more user facing content and allowing for additional 3d models and art assets into the project. In order to have this work out, we are starting to design and create the first level for the game.
+
+So far the first house layout is only a rough sketch and partially created in Unity. We are using pro builder and I'm still figuring out some of the best practices for building a level. So far it's going alright (debateable) and hopefully we can replace the prototype pro-builder meshes and assets with more professional looking and nicer looking blender assets. 
+
+> First level design/layout
+> ![Preview of the house layout design (very rough sketch as of now)](https://drive.google.com/uc?export=view&id=11FFlAk-9fyp-aybwzmKDFBczo3jXgayq)
+
+> First story of the house built in unity as a prototype
+> ![The first story of the house designed in blender (with doors and rooms as of now)](https://drive.google.com/uc?export=view&id=1cUcpfnoACLW-5QoqaQX8DeBPEgoxHkdf)
+
+We're still not sure what kind of style want want the game to have as of yet. We are thinking maybe a low-poly and [cel-shaded](https://en.wikipedia.org/wiki/Cel_shading#:~:text=Cel%20shading%20or%20toon%20shading,gradient%20or%20tints%20and%20shades.) (sometimes called a toon-shader) look may align well with our current skill level and resources available for making the project. 
+
+The look of the first level and resources used to develop it will be an interesting update over the next few weeks. 
