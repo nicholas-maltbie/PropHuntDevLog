@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Week 18 : New Platform - Mirror"
+date:   2021-01-16 16:47:00 -0000
+categories: update
+comments: true
+---
+
+Weekly updates are still going (but just on Saturday instead of Friday).
+
+## Added Features
+
+Added a new map
+
+<div class="container">
+<iframe width="722" height="511" src="https://www.youtube.com/embed/jGW_Qto68xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+</div>
+
+There haven't been too many big code changes, mostly just making the map and planning out the prop disguise.
+
+
+## Future Plans
+
+Alright, so the game development has been going pretty slowly and DOTS has lead to a lot of dead ends so far in development (Loading new scenes, baked lighting, some network communication).
+
+In interest of finishing the project and adding new developers, I'm going to switch the platform to the easier to use (and more finished) library [Mirror](https://mirror-networking.com/). New git repo will be started today and moving away from ECS.
